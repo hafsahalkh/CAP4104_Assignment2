@@ -120,11 +120,20 @@
                         Recusandae expedita id dolores sit labore libero aliquid facere esse ea minima, nam consequuntur maiores! 
                         Omnis, quis tempore nobis rem minima quasi!
                     </p>
-    
                 </div>
             </div>
-            
+        
         </div>
+        <script>
+            const tabs= document.querySelectorAll('.tab_btn');
+            const all_content= document.querySelectorAll('.content');
 
+            tabs.forEach((tab, index)=>{
+                tab.addEventListener('click', ()=>{
+                    tabs.forEach(tab=>{tab.classList.remove('active')});
+                    tab.classList.add('active');
+                })
+            })
+        </script>
     </body>
 </html>
